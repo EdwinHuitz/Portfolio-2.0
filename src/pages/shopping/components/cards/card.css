@@ -1,0 +1,63 @@
+.Grid{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+   "title title"
+   "img0 img1"
+   "price0 price1"
+   "img2 img3"
+   "price2 price3";
+}
+.Card{
+   background-color: white;
+   padding:1%;
+   width:12vw;
+   min-width: 9em;
+   max-width: 12em;
+   height: 35vh;
+   min-height:15em;
+   max-height: 16em;
+   color:black;
+}
+.Title{
+   grid-area:title;
+   width:100%;
+}
+img{
+   min-width:4em;
+   min-height:4em;
+   margin:3%;
+}
+.cardPic{
+   height:33%;
+   max-height:5em;
+   width:33%;
+   max-width:5em;
+   margin:3%;
+}
+.Pic0{grid-area: img0;}
+.Pic1{grid-area: img1;}
+.Pic2{grid-area: img2;}
+.Pic3{grid-area: img3;}
+.Price0{grid-area: price0;}
+.Price1{grid-area: price1;}
+.Price2{grid-area: price2;}
+.Price3{grid-area: price3;}
+.Price0,.Price1,.Price2,.Price3{
+   display:flex;
+   justify-self: center;
+   align-self:center;
+}
+.hideDetailCard{
+   visibility: hidden;
+}
+.showDetailCard{
+   visibility: visible;
+}
+@media(max-width:800px){
+   .Card{
+    width:24vw;
+    height:35vh;
+   }
+}

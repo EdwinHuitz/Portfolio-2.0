@@ -1,0 +1,49 @@
+.SCItem{
+   margin-top:10px;
+   display:grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: 1fr;
+   grid-template-areas: 'img title price input';
+}
+.SCImg{
+   grid-area:'img';
+   min-height:5em;
+   max-height:5em;
+   min-width:5em;
+   max-width:5em;
+}
+.SCTitle{
+   grid-area:'title';
+   min-width:7em;
+   max-width:7em;
+}
+.SCPrice{
+   grid-area:'price';
+   min-width:4em;
+   max-width:4em;
+   text-align:center;
+
+}
+.SCInput{
+   grid-area:'input';
+}
+.SCMainCart{
+   overflow-y: scroll;
+}
+.SCNum{
+   border:none;
+   min-width:2em;
+   max-width:12em;
+   min-height:1em;
+   max-height:1em;
+   text-align: center;
+   background-color: inherit;
+}
+.editBtns{
+   min-height:1em;
+   max-height:1.5em;
+   min-width:1em;
+   max-width:1.5em;
+   background-color: none;
+   border-radius: 25%;
+}
